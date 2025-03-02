@@ -1,0 +1,47 @@
+.mainContainer{
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mainSections{
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 2rem;
+    padding-top: 3rem;
+}
+.section{
+    padding-top: 10rem;
+}
+.lightText{
+    font-weight: 200;
+}
+.boldText{
+    font-weight: 500;
+}
+.sectionHeader{
+    font-size: 52px;
+    padding-top: 2rem;
+}
+
+.imageContainer{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 2.5rem;
+}
+
+.sublineText{
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 2rem;
+}
+.buttonContainerHome{
+    padding-top: 2rem;
+}
+.footerContainer{
+    padding-top: 5rem;
+}
+.formInput{
+    background-color: black;
+}

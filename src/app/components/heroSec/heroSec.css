@@ -1,0 +1,50 @@
+.videoContainer {
+    height: 100dvh;
+    width: 100%;
+    position: relative;
+}
+
+.backgroundVideo {
+    object-fit: cover; /* Covers the container while maintaining aspect ratio */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.heroContent{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    padding: 2rem;
+    padding-bottom: clamp(0rem, 6vw, 7rem);
+}
+.heroContentContainer{
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+.headlineSmall{
+    font-weight: 300;
+    font-size: clamp(20px, 5vw, 35px);
+}
+.headlineBig{
+    font-weight: 600;
+    max-width: 100%;
+    font-size: clamp(43px, 7vw, 100px);
+    margin-top: 0.5rem;
+    margin-bottom: clamp(1rem, 6vw, 4rem);
+    line-height: 0.8;
+}
+.overlay{
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.headlineBigContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}

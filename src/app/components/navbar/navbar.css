@@ -1,0 +1,268 @@
+.navbarContainer {
+  width: 100%;
+  min-height: 75px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+/* Non-scrolled state */
+.navbarContainer:not(.scrolled) {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+}
+
+/* Scrolled state */
+.navbarContainer.scrolled {
+  background-color: black; /* Solid black when scrolled */
+}
+
+/* Rest of your CSS remains the same */
+.navbarElementsContainer {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.logo{
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -2.9px;
+  z-index: 20;
+}
+
+/* The rest of your CSS stays the same */
+
+.navbarHamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px; /* Space between lines */
+  width: 30px; /* Width of the hamburger icon */
+  cursor: pointer;
+  z-index: 20;
+}
+  
+.hamburgerMenuLineOne {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    align-self: flex-end;
+}
+.hamburgerMenuLineTwo {
+    width: 85%;
+    height: 1px;
+    background-color: white;
+    align-self: flex-end;
+}
+.hamburgerMenuLineThree {
+    width: 60%;
+    height: 1px;
+    background-color: white;
+    align-self: flex-end;
+}
+
+@keyframes topLineAnimation {
+    0% { 
+      transform: translateY(0) rotate(0);
+      width: 100%;
+    }
+    40% { 
+      transform: translateY(6px) rotate(0); /* Move to center */
+      width: 85%; /* Take the width of middle line */
+    }
+    50% { 
+      transform: translateY(6px) rotate(0); /* Pause at center */
+      width: 85%;
+    }
+    100% { 
+      transform: translateY(6px) rotate(45deg); /* Rotate to form X */
+      width: 85%;
+    }
+  }
+  
+  @keyframes middleLineAnimation {
+    0% {
+      opacity: 1;
+      width: 85%;
+    }
+    40% {
+      opacity: 1;
+      width: 85%;
+    }
+    50% {
+      opacity: 0; /* Fade out once lines are centered */
+      width: 85%;
+    }
+    100% {
+      opacity: 0;
+      width: 85%;
+    }
+  }
+  
+  @keyframes bottomLineAnimation {
+    0% { 
+      transform: translateY(0) rotate(0);
+      width: 60%;
+    }
+    40% { 
+      transform: translateY(-6px) rotate(0); /* Move to center */
+      width: 85%; /* Take the width of middle line */
+    }
+    50% { 
+      transform: translateY(-6px) rotate(0); /* Pause at center */
+      width: 85%;
+    }
+    100% { 
+      transform: translateY(-6px) rotate(-45deg); /* Rotate to form X */
+      width: 85%;
+    }
+  }
+  
+  /* Reverse animations */
+  @keyframes topLineAnimationReverse {
+    0% { 
+      transform: translateY(6px) rotate(45deg);
+      width: 85%;
+    }
+    50% { 
+      transform: translateY(6px) rotate(0);
+      width: 85%;
+    }
+    60% { 
+      transform: translateY(6px) rotate(0);
+      width: 85%;
+    }
+    100% { 
+      transform: translateY(0) rotate(0);
+      width: 100%;
+    }
+  }
+  
+  @keyframes middleLineAnimationReverse {
+    0% {
+      opacity: 0;
+      width: 85%;
+    }
+    50% {
+      opacity: 0;
+      width: 85%;
+    }
+    60% {
+      opacity: 1;
+      width: 85%;
+    }
+    100% {
+      opacity: 1;
+      width: 85%;
+    }
+  }
+  
+  @keyframes bottomLineAnimationReverse {
+    0% { 
+      transform: translateY(-6px) rotate(-45deg);
+      width: 85%;
+    }
+    50% { 
+      transform: translateY(-6px) rotate(0);
+      width: 85%;
+    }
+    60% { 
+      transform: translateY(-6px) rotate(0);
+      width: 85%;
+    }
+    100% { 
+      transform: translateY(0) rotate(0);
+      width: 60%;
+    }
+  }
+  
+  /* Apply the animations */
+  .navbarHamburgerMenu.open .hamburgerMenuLineOne {
+    animation: topLineAnimation 0.5s forwards;
+  }
+  
+  .navbarHamburgerMenu.open .hamburgerMenuLineTwo {
+    animation: middleLineAnimation 0.5s forwards;
+  }
+  
+  .navbarHamburgerMenu.open .hamburgerMenuLineThree {
+    animation: bottomLineAnimation 0.5s forwards;
+  }
+  
+  .navbarHamburgerMenu:not(.open) .hamburgerMenuLineOne {
+    animation: topLineAnimationReverse 0.5s forwards;
+  }
+  
+  .navbarHamburgerMenu:not(.open) .hamburgerMenuLineTwo {
+    animation: middleLineAnimationReverse 0.5s forwards;
+  }
+  
+  .navbarHamburgerMenu:not(.open) .hamburgerMenuLineThree {
+    animation: bottomLineAnimationReverse 0.5s forwards;
+  }
+
+/* Update the mobile menu styles */
+.mobileNavMenu {
+    position: absolute;
+    padding-top: 75px;
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+    animation: slideDown 0.4s forwards;
+    transform-origin: top;
+    z-index: 15;
+}
+/* Add this for the closing animation */
+.mobileNavMenu.closing {
+    animation: slideUp 0.4s forwards;
+}
+
+.mobileNavMenuLink{
+    padding: 1rem 2rem;
+    font-weight: 300;
+    font-size: 22px;
+}
+.mobileNavMenuLine{
+    opacity: 0.5;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+
+/* Add this to your existing CSS */
+@keyframes slideDown {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height: 100vh; /* Full viewport height */
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      height: 100vh;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+  
+  

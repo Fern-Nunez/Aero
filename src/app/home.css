@@ -1,0 +1,210 @@
+.mainContainer{
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+}
+.middleSetter{
+    padding: 0 2rem;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+
+.heroContainer {
+    width: 100%;
+    overflow: hidden; /* Prevents any potential overflow */
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.sectionHeader{
+    padding: clamp(2rem, 5vw, 6rem) 0;
+}
+.smallHeadlineBlack{
+    font-weight: 500;
+    font-size: 40px;
+    color: black;
+}
+.descriptionBlack{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+}
+.featuredVehicleOverlayWhite {
+    position: absolute;
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0)20%,  rgba(0,0,0,0.3) 100%);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+/*-----------------------------------------------------------------------------------------------*/
+.modelImageContainer{
+    height: 325px;
+    position: relative;
+}
+.featuredVehicleImage{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.featuredVehicleImageGClass{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-position:79% center;
+}
+.featuredVehicleImagePorsche{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-position:35% center;
+}
+.featuredVehicleOverlay {
+    position: absolute;
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0)20%,  rgba(0,0,0,0.3) 100%);
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+.modelGridItem{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+}
+.featuredModelsGrid{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 4rem;
+    padding-bottom: clamp(2rem, 5vw, 7rem);
+}
+
+@media (min-width: 1280px) {
+    .featuredModelsGrid{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 3rem;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.eeSection{
+    margin-bottom: clamp(2rem, 5vw, 10rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 3rem;
+    column-gap: 6rem;
+}
+.eeHeadlineContainer{
+    grid-column: 1;
+    grid-row: 1;
+}
+.description{
+    font-size: 37px;
+    font-weight: 300;
+    grid-column: 1;
+    grid-row: 2;
+}
+.eeButtonContainer{
+    grid-column: 1;
+    grid-row: 3;
+}
+.eeImageContainer{
+    height: 100%;
+    position: relative;
+    grid-column: 2;
+    grid-row: 1/ span 3;
+}
+@media (max-width: 768px) {
+    .eeSection {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+    
+    .eeHeadlineContainer {
+        grid-row: 1;
+        grid-column: 1;
+        width: 100%;
+    }
+    
+    .eeImageContainer {
+        grid-row: 2;
+        grid-column: 1;
+        height: 325px;
+        width: 100%;
+    }
+    
+    .description {
+        grid-row: 3;
+        grid-column: 1;
+        font-size: 24px; /* You might want a smaller font on mobile */
+    }
+    
+    .eeButtonContainer {
+        grid-row: 4;
+        grid-column: 1;
+    }
+}
+/*-----------------------------------------------------------------------------------------------*/
+.eventsSection{
+    background-color: white;
+    padding-bottom: clamp(2rem, 5vw, 6rem);
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.newsletterSection {
+    /* Keep your existing styles */
+    background-image: url('/images/home/newsletterImageNew.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: clamp(300px, 20vw, 500px);
+    
+    /* Add these styles to center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletterContent {
+    color: white;
+    z-index: 2;
+    position: relative; /* Center the text */
+    padding: 20px; /* Add some padding */
+    width: 80%;
+    max-width: 600px;
+}
+
+.newsletterOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+/* Add some spacing between elements */
+.newsletterHeader {
+    font-size: clamp(27px, 4vw, 40px);
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.newsletterDescription {
+    text-align: center;
+    font-size: clamp(15px, 4vw, 25px);
+    font-weight: 300;
+}
+.newsletterButtonContainer{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    left: -50px;
+    scale: 0.8;
+}
