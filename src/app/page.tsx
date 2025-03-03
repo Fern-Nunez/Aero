@@ -98,29 +98,29 @@ export default function Home() {
         {/*------------------------------------------------------------------*/}
         <div className="eeSection">
 
-            <div className="eeHeadlineContainer">
-              <h1>Engineered for Excellence</h1>
-            </div>
+          <div className="eeHeadlineContainer">
+            <h1>Engineered for Excellence</h1>
+          </div>
             
-            <div className="description">
-            Cutting-edge aerodynamics and precision engineering come together to create unmatched performance. Every detail is designed to maximize speed, control, and efficiency on the road or track.
-            </div>
+          <div className="description">
+          Cutting-edge aerodynamics and precision engineering come together to create unmatched performance. Every detail is designed to maximize speed, control, and efficiency on the road or track. The result is a driving experience that seamlessly blends power, agility, and refinement, pushing the limits of innovation with every turn.
+          </div>
             
-            <div className="eeButtonContainer">
-              <ThemedButton text="Discover More"/>
-            </div>
+          <div className="eeButtonContainer">
+            <ThemedButton text="Discover More"/>
+          </div>
 
-
-            <div className="eeImageContainer">
-              <Image
-                src="/images/home/ee.jpg"
-                alt="C Class Image"
-                layout="fill"
-                objectFit="cover"
-                className="featuredVehicleImage"
-              />
-              <div className="featuredVehicleOverlay"></div>
-            </div>
+          <div className="eeImageContainer">
+            <Image
+              src="/images/home/pinkPorsche.jpg"
+              alt="C Class Image"
+              layout="fill"
+              objectFit="cover"
+              className="featuredVehicleImage"
+            />
+            <div className="featuredVehicleOverlay2"></div>
+            <div className="featuredVehicleOverlay1"></div>
+          </div>
 
         </div>
       </div>
