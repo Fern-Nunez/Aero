@@ -93,6 +93,8 @@ export default function Footer() {
   };
 
   return (
+    <>
+    <hr className="topFooterLine"></hr>
     <div className="footerContainer">
       <hr className="topFooterLine"></hr>
       <div className="returnContainer" onClick={scrollToTop} role="button" tabIndex={0}>
@@ -115,7 +117,23 @@ export default function Footer() {
           <div className="dropdownLineRight"></div>
         </div>
       </div>
-
+      <div className="desktopFooterMenuLinks">
+          <a>
+            <div className="footerLink">
+                G Class
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                911 Carrera GTS
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                C Class
+            </div>
+          </a>
+        </div>
       <hr className="footerDivider"></hr>
 
       {(isVehicleMenuOpen || isVehicleMenuClosing) && (
@@ -143,7 +161,43 @@ export default function Footer() {
           <div className="dropdownLineRight"></div>
         </div>
       </div>
-
+      <div className="desktopFooterMenuLinks">
+          <a>
+            <div className="footerLink">
+                Home
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Vehicles
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Events
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Engineering Excellence
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Visual Showcase
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Newsletter
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Request and Invitation
+            </div>
+          </a>
+        </div>
       <hr className="footerDivider"></hr>
 
       {(isNavigationMenuOpen || isNavigationMenuClosing) && (
@@ -172,7 +226,38 @@ export default function Footer() {
           <div className="dropdownLineRight"></div>
         </div>
       </div>
-      
+      <div className="desktopFooterMenuLinks">
+          <a>
+            <div className="footerLink">
+                Contact Us
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                FAQ
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Dealership Locator
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Test Drive Request
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Maintenance & Service
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Owners Portal
+            </div>
+          </a>
+        </div>
       <hr className="footerDivider"></hr>
       
       {(isSupportMenuOpen || isSupportMenuClosing) && (
@@ -195,7 +280,38 @@ export default function Footer() {
           <div className="dropdownLineRight"></div>
         </div>
       </div>
-
+      <div className="desktopFooterMenuLinks">
+          <a>
+            <div className="footerLink">
+                Privacy Policy
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Terms & Conditions
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Cookie Policy
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Return & Refund Policy
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Warranty & Service Policy
+            </div>
+          </a>
+          <a>
+            <div className="footerLink">
+                Accessibility Statement
+            </div>
+          </a>
+        </div>
       <hr className="footerDivider"></hr>
 
       {(isLegalMenuOpen || isLegalMenuClosing) && (
@@ -213,5 +329,6 @@ export default function Footer() {
         Designed by **Name** Studio. All rights reserved.
       </div>
     </div>
+    </>
   );
 }

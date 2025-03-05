@@ -25,22 +25,7 @@ export default function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
-  // Manage body scroll lock when menu is open
-  useEffect(() => {
-    if (isMenuOpen) {
-      // Disable scrolling
-      document.body.style.overflow = 'hidden';
-    } else {
-      // Re-enable scrolling
-      document.body.style.overflow = '';
-    }
-    
-    // Clean up effect
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isMenuOpen]);
+ 
  
   const toggleMenu = () => {
     if (isMenuOpen) {
@@ -59,7 +44,7 @@ export default function Navbar() {
   };
  
   return (
-    <div className={`navbarContainer ${isScrolled ? 'scrolled' : ''}`}>
+    <div className={`navbarContainer ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
         <div className="navbarElementsContainer">
           <a href="/">
             <div className="logo">
@@ -74,7 +59,7 @@ export default function Navbar() {
         </div>
         {(isMenuOpen || isClosing) && (
           <div className={`mobileNavMenu ${isClosing ? 'closing' : ''}`}>
-            {/* Your menu content stays the same */}
+            {/* Menu content remains the same */}
             <a href="/">
               <div className="mobileNavMenuLink">
                 Home
@@ -89,13 +74,25 @@ export default function Navbar() {
             <hr className="mobileNavMenuLine"></hr>
             <a href="/craftmanship">
               <div className="mobileNavMenuLink">
-                Craftmanship
+                Events
               </div>
             </a>
             <hr className="mobileNavMenuLine"></hr>
             <a href="/legacy">
               <div className="mobileNavMenuLink">
-                Our Legacy
+                Engineering Excellence
+              </div>
+            </a>
+            <hr className="mobileNavMenuLine"></hr>
+            <a href="/invitation">
+              <div className="mobileNavMenuLink">
+                Visual Showcase
+              </div>
+            </a>
+            <hr className="mobileNavMenuLine"></hr>
+            <a href="/invitation">
+              <div className="mobileNavMenuLink">
+                Newsletter
               </div>
             </a>
             <hr className="mobileNavMenuLine"></hr>

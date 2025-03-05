@@ -1,0 +1,351 @@
+
+.eventsGridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content max-content auto 30px;
+    column-gap: 8rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    /* Add a minimum height to ensure the grid has enough vertical space */
+    min-height: 700px;
+}
+.evenetsHeadlineContianer {
+    grid-column: 2;
+    grid-row: 1; /* Align at the bottom of the cell */
+}
+
+.eventsDescriptionContainer {
+    grid-column: 2;
+    grid-row: 2;
+    /* Make sure content can expand naturally */
+    min-height: min-content;
+    max-height: max-content;
+    /* Add some vertical margin to separate from headline */
+    margin: 20px 0;
+    /* Set this to auto to allow content to determine height */
+}
+
+.eventsButtonContainer {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: start; /* Align at the top of the cell */
+}
+
+.newsCounter {
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    justify-content: start; /* Align dots to the left */
+    align-items: center;
+}
+.eventsImageContainer{
+    grid-column: 1;
+    grid-row: 1/span 4;
+    /* These are crucial for the image to fill the container */
+    position: relative;
+    height: 100%;
+}
+
+.eventsImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.bigHeadlineBlack{
+  font-weight: 500;
+  font-size: clamp(35px, 5vw,60px);
+  color: black;
+}
+.descriptionBlack{
+  font-size: clamp(22px, 5vw, 30px);
+  font-weight: 300;
+  color: black;
+}
+
+.navDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc; /* Default gray color */
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navDot.active {
+    background-color: #000; /* Black color for active dot */
+    transform: scale(1.2);
+    width: 20px; /* Slightly larger when active */
+    border-radius: 20px;
+}
+.eventsSectionJSX{
+    display: flex;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    min-height: 735px;
+}
+.chevronIcon{
+    cursor: pointer;
+}
+.chevronWrapper{
+  width: 30px;
+  margin: 0rem 0.5rem;
+}
+.loadingProgressBar {
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    width: 0;  /* This will be controlled by React state */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;  /* Ensure it's above the image */
+}
+@keyframes slideLeftOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideRightIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Add animation classes */
+  .image-slide-out {
+    animation: slideLeftOut 0.5s ease forwards;
+  }
+  
+  .image-slide-in {
+    animation: slideRightIn 0.5s ease forwards;
+  }
+  
+  /* Remove the slideLeft animation that doesn't seem to be working as intended */
+  .eventsImage {
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Ensure image container handles overflow properly */
+  .eventsImageContainer {
+    overflow: hidden;
+  }
+/*------------------------------------------------------------------------------------------------------------*/
+
+.blackButtonContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.blackButtonBox {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 20%;
+    min-width: 70px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Add these pseudo-elements for the right side partial borders */
+.blackButtonBox::before, 
+.blackButtonBox::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0.75px; /* Same width as other borders */
+    background-color: rgb(0, 0, 0);
+    height: 5px; /* Length of each border segment - adjust as needed */
+}
+
+.blackButtonBox::before {
+    top: 0; /* Top-right segment */
+}
+
+.blackButtonBox::after {
+    bottom: 0; /* Bottom-right segment */
+}
+
+.blackButtonContent {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 4px 15px;
+}
+
+.blackButtonText {
+    white-space: nowrap;
+    color: rgb(0, 0, 0); /* Ensure text is visible on black background */
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.blackButtonArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    margin-right: 12px; /* Space between arrow and text (previously on buttonText) */
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+/* Add these animations to your eventsSec.css file */
+
+/* Text slide-up animation (entering) */
+@keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Text slide-up animation (exiting) */
+  @keyframes slideUpOut {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+        width: 100%;
+    }
+    100% {
+        transform: translateX(-100%);
+        width: 0%;
+    }
+}
+
+.event-content-active .eventsImage {
+    animation: slideLeft 0.5s ease forwards;
+}
+  /* Animation for content appearing */
+  .event-content-active .bigHeadlineBlack,
+  .event-content-active .descriptionBlack,
+  .event-content-active .blackButtonContainer {
+    animation: slideUp 0.5s ease forwards;
+  }
+
+  /* Animation for content disappearing */
+  .content-fading .bigHeadlineBlack {
+    animation: slideUpOut 0.3s ease forwards;
+  }
+  
+  .content-fading .descriptionBlack {
+    animation: slideUpOut 0.3s ease forwards;
+    animation-delay: 0.05s;
+  }
+  
+  .content-fading .blackButtonContainer {
+    animation: slideUpOut 0.3s ease forwards;
+    animation-delay: 0.1s;
+  }
+  
+  /* Add different delay for each element on enter */
+  .event-content-active .bigHeadlineBlack {
+    animation-delay: 0.1s;
+  }
+  
+  .event-content-active .descriptionBlack {
+    animation-delay: 0.2s;
+  }
+  
+  .event-content-active .blackButtonContainer {
+    animation-delay: 0.3s;
+  }
+  
+  /* Set initial state for elements */
+  .evenetsHeadlineContianer .bigHeadlineBlack,
+  .eventsDescriptionContainer .descriptionBlack,
+  .eventsButtonContainer .blackButtonContainer {
+    opacity: 0;
+  }
+  
+  /* Ensure smooth transitions */
+  .evenetsHeadlineContianer,
+  .eventsDescriptionContainer,
+  .eventsButtonContainer {
+    overflow: hidden; /* Prevents content from showing outside container during animation */
+  }
+
+  /*------------------------------------------------------------------------------------------------------------*/
+
+  @media (max-width: 1280px){
+    .chevronWrapper{
+      display: none;
+    }
+    .eventsGridContainer{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      min-height: unset;
+    }
+    .eventsImageContainer{
+      grid-column: 1;
+      grid-row: 1;
+      height: 275px; /* Set explicit height for mobile */
+      position: relative;
+      overflow: hidden;
+    }
+    .eventsImage{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+    .evenetsHeadlineContianer{
+      grid-column: 1;
+      grid-row: 2;
+      margin-top: 20px;
+    }
+    .eventsDescriptionContainer{
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .eventsButtonContainer{
+      grid-column: 1;
+      grid-row: 4;
+    }
+    .newsCounter{
+      grid-column: 1;
+      grid-row: 5;
+      justify-content: center;
+      margin: 15px 0;
+    }
+    /* Adjust font sizes for mobile */
+
+  }

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import ThemedButton from "./components/button/themedButton"
-import HeroSec from "./components/heroSec/heroSec"
+import ThemedButton from "./components/button/themedButton";
+import HeroSec from "./components/heroSec/heroSec";
+import EventsSec from "./components/eventsSec/eventsSec";
 import "./home.css";
 
 export default function Home() {
@@ -103,7 +104,7 @@ export default function Home() {
           </div>
             
           <div className="description">
-          Cutting-edge aerodynamics and precision engineering come together to create unmatched performance. Every detail is designed to maximize speed, control, and efficiency on the road or track. The result is a driving experience that seamlessly blends power, agility, and refinement, pushing the limits of innovation with every turn.
+            Cutting-edge aerodynamics and precision engineering come together to create unmatched performance. Every detail is designed to maximize speed, control, and efficiency on the road or track. The result is a driving experience that seamlessly blends power, agility, and refinement, pushing the limits of innovation with every turn.
           </div>
             
           <div className="eeButtonContainer">
@@ -124,40 +125,13 @@ export default function Home() {
 
         </div>
       </div>
-    </div>
+    </div> 
+
     {/*------------------------------------------------------------------*/}
     <div className="eventsSection">
       <div className="mainContainer">
         <div className="middleSetter">
-
-          
-          <div className="modelGridItem">
-          <div className="modelImageContainer">
-            <Image
-              src="/images/home/event1.webp"
-              alt="Porsche Image"
-              layout="fill"
-              objectFit="cover"
-              className="featuredVehicleImagePorsche"
-            />
-            <div className="featuredVehicleOverlayWhite"></div>
-          </div>
-
-          <div className="modelNameContianer">
-            <div className="smallHeadlineBlack">
-            Monterey Car Week 2025
-            </div>
-          </div>
-
-          <div className="modelDescriptionContainer">
-            <div className="descriptionBlack">
-            Experience the future of automotive excellence with exclusive reveals, high-performance builds, and iconic designs.
-            </div>
-          </div>
-          <div className="modelButtonContainer">
-            <ThemedButton text="View Vehicle"/>
-          </div>
-        </div>
+          <EventsSec/>
         </div>
       </div>
     </div>

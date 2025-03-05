@@ -15,7 +15,8 @@
 
 /* Scrolled state */
 .navbarContainer.scrolled {
-  background-color: rgb(0, 0, 0); /* Solid black when scrolled */
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s ease;
 }
 
 /* Rest of your CSS remains the same */
@@ -27,6 +28,7 @@
   align-items: center;
   padding: 0 2rem;
   width: 100%;
+  transition: color 0.5s ease;
 }
 
 .logo{
@@ -35,6 +37,9 @@
   font-weight: 700;
   letter-spacing: -2.9px;
   z-index: 20;
+}
+.scrolled .logo {
+  color: black; /* Change to black when scrolled */
 }
 
 /* The rest of your CSS stays the same */
@@ -54,20 +59,29 @@
     height: 1px;
     background-color: white;
     align-self: flex-end;
+    transition: color 0.5s ease;
 }
 .hamburgerMenuLineTwo {
     width: 85%;
     height: 1px;
     background-color: white;
     align-self: flex-end;
+    transition: color 0.5s ease;
 }
 .hamburgerMenuLineThree {
     width: 60%;
     height: 1px;
     background-color: white;
     align-self: flex-end;
+    transition: color 0.5s ease;
 }
 
+/* Hamburger lines color when scrolled */
+.scrolled .hamburgerMenuLineOne,
+.scrolled .hamburgerMenuLineTwo,
+.scrolled .hamburgerMenuLineThree {
+  background-color: black; /* Change to black when scrolled */
+}
 @keyframes topLineAnimation {
     0% { 
       transform: translateY(0) rotate(0);
@@ -216,22 +230,63 @@
     background-color: black;
     width: 100%;
     overflow: hidden;
-    animation: slideDown 0.4s forwards;
+    animation: navSlideDown 0.4s forwards; /* Changed from slideDown */
     transform-origin: top;
     z-index: 15;
 }
-/* Add this for the closing animation */
-.mobileNavMenu.closing {
-    animation: slideUp 0.4s forwards;
-}
 
+/* Update this reference as well */
+.mobileNavMenu.closing {
+    animation: navSlideUp 0.4s forwards; /* Changed from slideUp */
+}
+@media (min-width: 1280px) {
+  .mobileNavMenu {
+    height: 0;
+    animation: navSlideDownDesktop 0.4s forwards;
+    position: absolute;
+    width: 100%;
+    top: 0px; /* Position it right below your navbar which is 75px tall */
+    left: 0;
+  }
+
+  .mobileNavMenu.closing {
+    animation: navSlideUpDesktop 0.4s forwards;
+  }
+
+  /* Update the desktop animations to use a fixed height instead of 100% */
+  @keyframes navSlideDownDesktop {
+    0% {
+      height: 0;
+      opacity: 0;
+    }
+    100% {
+      height:630px; /* Fixed height - adjust as needed */
+      opacity: 1;
+    }
+  }
+
+  @keyframes navSlideUpDesktop {
+    0% {
+      height: 630px; /* Should match the height above */
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
 .mobileNavMenuLink{
     padding: 1rem 2rem;
     font-weight: 300;
     font-size: 22px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .mobileNavMenuLine{
     opacity: 0.5;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .socials{
     display: flex;
@@ -243,26 +298,42 @@
 
 
 /* Add this to your existing CSS */
-@keyframes slideDown {
-    0% {
-      height: 0;
-      opacity: 0;
-    }
-    100% {
-      height: 100vh; /* Full viewport height */
-      opacity: 1;
-    }
+@keyframes navSlideDown {
+  0% {
+    height: 0;
+    opacity: 0;
   }
-  
-  @keyframes slideUp {
-    0% {
-      height: 100vh;
-      opacity: 1;
-    }
-    100% {
-      height: 0;
-      opacity: 0;
-    }
+  100% {
+    height: 100vh; /* Full viewport height */
+    opacity: 1;
   }
-  
-  
+}
+
+/* Change slideUp to navSlideUp */
+@keyframes navSlideUp {
+  0% {
+    height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+/* Override the scrolled color when menu is open */
+.scrolled.menu-open .logo {
+  color: white; /* Force white when menu is open, even if scrolled */
+}
+
+.scrolled.menu-open .hamburgerMenuLineOne,
+.scrolled.menu-open .hamburgerMenuLineTwo,
+.scrolled.menu-open .hamburgerMenuLineThree {
+  background-color: white; /* Force white when menu is open, even if scrolled */
+}
+
+/* Make sure the menu background becomes fully opaque black when open */
+.navbarContainer.menu-open {
+  background: rgba(0,0,0,0.9) !important; /* Override any scrolled background */
+  transition: background-color 0.5s ease;
+}
