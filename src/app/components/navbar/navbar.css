@@ -15,7 +15,7 @@
 
 /* Scrolled state */
 .navbarContainer.scrolled {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   transition: 0.5s ease;
 }
 
@@ -37,9 +37,6 @@
   font-weight: 700;
   letter-spacing: -2.9px;
   z-index: 20;
-}
-.scrolled .logo {
-  color: black; /* Change to black when scrolled */
 }
 
 /* The rest of your CSS stays the same */
@@ -76,12 +73,6 @@
     transition: color 0.5s ease;
 }
 
-/* Hamburger lines color when scrolled */
-.scrolled .hamburgerMenuLineOne,
-.scrolled .hamburgerMenuLineTwo,
-.scrolled .hamburgerMenuLineThree {
-  background-color: black; /* Change to black when scrolled */
-}
 @keyframes topLineAnimation {
     0% { 
       transform: translateY(0) rotate(0);
@@ -319,11 +310,6 @@
     height: 0;
     opacity: 0;
   }
-}
-
-/* Override the scrolled color when menu is open */
-.scrolled.menu-open .logo {
-  color: white; /* Force white when menu is open, even if scrolled */
 }
 
 .scrolled.menu-open .hamburgerMenuLineOne,
