@@ -66,31 +66,31 @@ export default function Navbar() {
               </div>
             </a>
             <hr className="mobileNavMenuLine"></hr>
-            <a href="/">
+            <a href="/vehicles">
               <div className="mobileNavMenuLink">
                 Vehicles
               </div>
             </a>
             <hr className="mobileNavMenuLine"></hr>
-            <a href="/craftmanship">
+            <a href="/events">
               <div className="mobileNavMenuLink">
                 Events
               </div>
             </a>
             <hr className="mobileNavMenuLine"></hr>
-            <a href="/legacy">
+            <a href="/engineering-excellence">
               <div className="mobileNavMenuLink">
                 Engineering Excellence
               </div>
             </a>
             <hr className="mobileNavMenuLine"></hr>
-            <a href="/invitation">
+            <a href="/showcase">
               <div className="mobileNavMenuLink">
                 Visual Showcase
               </div>
             </a>
             <hr className="mobileNavMenuLine"></hr>
-            <a href="/invitation">
+            <a href="/newsletter">
               <div className="mobileNavMenuLink">
                 Newsletter
               </div>

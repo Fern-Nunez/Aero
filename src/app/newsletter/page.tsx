@@ -1,19 +1,19 @@
 import Image from "next/image";
-import "./invitation.css";
+import "./newsletter.css";
 
-export default function Invitation() {
+export default function Newsletter() {
   return (
     <div className="mainContainer">
         <div className="mainSections">
 
             <div className="firstSection">
                 <div className="sectionHeader">
-                    <span className="boldText">Reserve Your Place </span>
-                    <span className="lightText">in Automotive History</span>
+                    <span className="lightText">Unmatched Luxury. </span>
+                    <span className="boldText">Exclusive Access.</span>
                 </div>
 
                 <div className="sublineText">
-                    Owning an Aero is more than a purchase—it’s an exclusive experience. Request an invitation to secure your place among those who demand the ultimate in performance, luxury, and craftsmanship.
+                Be the first to know about exclusive releases, cutting-edge innovations, and behind-the-scenes insights into the world of high-performance engineering. Sign up for our newsletter and never miss a moment of the action.
                 </div>
 
             </div>
@@ -31,28 +31,18 @@ export default function Invitation() {
                         </div>
 
                         <div>
-                            <label className="formInputLabel"> Phone Number</label>
-                            <input type="phone" className="formInput" required></input>                
-                        </div>
-
-                        <div>
                             <label className="formInputLabel"> Country/Location</label>
-                            <input type="input" className="formInput" required></input>                        
-                        </div>
-
-                        <div>
-                            <label className="formInputLabel"> Currently Own Any Supercars?</label>
-                            <input type="input" className="formInput" required></input>                        
-                        </div>
-                        
-                        <div>
-                            <label className="formInputLabel"> Budget Range</label>
                             <input type="input" className="formInput" required></input>                        
                         </div>
 
                         <div className="termsCheckBoxContainer">
                             <input type="checkbox" id="terms" required className="actualCheckbox"></input>
-                            <label htmlFor="terms" className="checkboxLabel"> I understand that submitting this request does not guarantee an invitation and that availability is limited.</label>
+                            <label htmlFor="terms" className="checkboxLabel"> Be the first to experience private showcases, test drives, and exclusive launch events.</label>
+                        </div>
+
+                        <div className="termsCheckBoxContainer">
+                            <input type="checkbox" id="terms" required className="actualCheckbox"></input>
+                            <label htmlFor="terms" className="checkboxLabel">  I agree to the [Privacy Policy] and consent to the collection and use of my information for communications related to brand updates, promotions, and events.</label>
                         </div>
                     </div>
 

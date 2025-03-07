@@ -145,11 +145,11 @@
     padding: 0.5rem 2rem;
     font-weight: 300;
     font-size: clamp(17px, 4vw, 20px);
+    cursor: pointer;
   }
   .desktopFooterMenuLinks{
     display: none;
   }
-
   @media (min-width: 1280px){
     .footerContainer{
       display: grid;

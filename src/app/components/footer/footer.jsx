@@ -94,9 +94,8 @@ export default function Footer() {
 
   return (
     <>
-    <hr className="topFooterLine"></hr>
+    <hr className="topFooterLineDesktop"></hr>
     <div className="footerContainer">
-      <hr className="topFooterLine"></hr>
       <div className="returnContainer" onClick={scrollToTop} role="button" tabIndex={0}>
         <div className="returnText">
           Back to Top
