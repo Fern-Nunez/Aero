@@ -55,7 +55,7 @@ function HeroSec() {
             <h1 className="headlineBig">Power. Precision.</h1>
             <h1 className="headlineBig">Prestige.</h1>
           </div>
-          <ThemedButton/>
+          <ThemedButton href='/vehicles'/>
         </div>
       </div>
     </div>

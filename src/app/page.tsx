@@ -7,120 +7,120 @@ import "./home.css";
 export default function Home() {
   return (
     <>
-    <div className="heroContainer">
+    <div className="heroContainerHome">
       <HeroSec/>
     </div>
-    <div className="mainContainer">
-      <div className="middleSetter">
-        <div className="featuredModelsSection">
-          <div className="sectionHeader">
+    <div className="mainContainerHome">
+      <div className="middleSetterHome">
+        <div className="featuredModelsSectionHome">
+          <div className="sectionHeaderHome">
             <h1>Featured Models</h1>
           </div>
 
-          <div className="featuredModelsGrid">
+          <div className="featuredModelsGridHome">
 
 
-            <div className="modelGridItem">
-              <div className="modelImageContainer">
+            <div className="modelGridItemHome">
+              <div className="modelImageContainerHome">
                 <Image
                   src="/images/home/gClass.webp"
                   alt="G Class Image"
                   layout="fill"
                   objectFit="cover"
-                  className="featuredVehicleImageGClass"
+                  className="featuredVehicleImageGClassHome"
                 />
-                <div className="featuredVehicleOverlay"></div>
+                <div className="featuredVehicleOverlayHome"></div>
               </div>
 
-              <div className="modelNameContianer">
+              <div className="modelNameContianerHome">
                 <h2>G Class</h2>
               </div>
 
-              <div className="modelDescriptionContainer">
+              <div className="modelDescriptionContainerHome">
                 <p>A rugged off-road icon with aggressive styling and unmatched performance on any terrain.</p>
               </div>
-              <div className="modelButtonContainer">
-                <ThemedButton text="View Vehicles"/>
+              <div className="modelButtonContainerHome">
+                <ThemedButton text="View Vehicles" href="/vehicles"/>
               </div>
             </div>
 
 
-            <div className="modelGridItem">
-              <div className="modelImageContainer">
+            <div className="modelGridItemHome">
+              <div className="modelImageContainerHome">
                 <Image
                   src="/images/home/porsche.jpg"
                   alt="Porsche Image"
                   layout="fill"
                   objectFit="cover"
-                  className="featuredVehicleImagePorsche"
+                  className="featuredVehicleImagePorscheHome"
                 />
-                <div className="featuredVehicleOverlay"></div>
+                <div className="featuredVehicleOverlayHome"></div>
               </div>
 
-              <div className="modelNameContianer">
+              <div className="modelNameContianerHome">
                 <h2>911 Carrera GTS</h2>
               </div>
 
-              <div className="modelDescriptionContainer">
+              <div className="modelDescriptionContainerHome">
                 <p>A track-tuned powerhouse, blending speed, precision, and aerodynamics for ultimate performance.</p>
               </div>
-              <div className="modelButtonContainer">
-                <ThemedButton text="View Vehicles"/>
+              <div className="modelButtonContainerHome">
+                <ThemedButton text="View Vehicles" href="/vehicles"/>
               </div>
             </div>
 
 
-            <div className="modelGridItem">
-              <div className="modelImageContainer">
+            <div className="modelGridItemHome">
+              <div className="modelImageContainerHome">
                 <Image
                   src="/images/home/cClass.jpg"
                   alt="C Class Image"
                   layout="fill"
                   objectFit="cover"
-                  className="featuredVehicleImage"
+                  className="featuredVehicleImageHome"
                 />
-                <div className="featuredVehicleOverlay"></div>
+                <div className="featuredVehicleOverlayHome"></div>
               </div>
 
-              <div className="modelNameContianer">
+              <div className="modelNameContianerHome">
                 <h2>C Class</h2>
               </div>
 
-              <div className="modelDescriptionContainer">
+              <div className="modelDescriptionContainerHome">
                 <p>A luxury sedan redefined, featuring sleek styling, enhanced aerodynamics, and a bold presence.</p>
               </div>
-              <div className="modelButtonContainer">
-                <ThemedButton text="View Vehicles"/>
+              <div className="modelButtonContainerHome">
+                <ThemedButton text="View Vehicles" href="/vehicles"/>
               </div>
             </div>
 
           </div>
         </div>
         {/*------------------------------------------------------------------*/}
-        <div className="eeSection">
+        <div className="eeSectionHome">
 
-          <div className="eeHeadlineContainer">
+          <div className="eeHeadlineContainerHome">
             <h1>Engineered for Excellence</h1>
           </div>
             
-          <div className="description">
+          <div className="descriptionHome">
             Cutting-edge aerodynamics and precision engineering come together to create unmatched performance. Every detail is designed to maximize speed, control, and efficiency on the road or track. The result is a driving experience that seamlessly blends power, agility, and refinement, pushing the limits of innovation with every turn.
           </div>
             
-          <div className="eeButtonContainer">
+          <div className="eeButtonContainerHome">
             <ThemedButton text="Discover More"/>
           </div>
 
-          <div className="eeImageContainer">
+          <div className="eeImageContainerHome">
             <Image
               src="/images/home/pinkPorsche.jpg"
               alt="C Class Image"
               layout="fill"
               objectFit="cover"
-              className="featuredVehicleImage"
+              className="featuredVehicleImageHome"
             />
-            <div className="featuredVehicleOverlay2"></div>
-            <div className="featuredVehicleOverlay1"></div>
+            <div className="featuredVehicleOverlay2Home"></div>
+            <div className="featuredVehicleOverlay1Home"></div>
           </div>
 
         </div>
@@ -128,26 +128,26 @@ export default function Home() {
     </div> 
 
     {/*------------------------------------------------------------------*/}
-    <div className="eventsSection">
-      <div className="mainContainer">
-        <div className="middleSetter">
+    <div className="eventsSectionHome">
+      <div className="mainContainerHome">
+        <div className="middleSetterHome">
           <EventsSec/>
         </div>
       </div>
     </div>
 
     {/*------------------------------------------------------------------*/}
-    <div className="newsletterSection">
-      <div className="newsletterOverlay"></div>
-      <div className="newsletterContent">
-        <div className="newsletterHeader">
+    <div className="newsletterSectionHome">
+      <div className="newsletterOverlayHome"></div>
+      <div className="newsletterContentHome">
+        <div className="newsletterHeaderHome">
           Newsletter
         </div>
-        <div className="newsletterDescription">
+        <div className="newsletterDescriptionHome">
         Get the latest AERO updates, events, and exclusive releases delivered to your inbox.
         </div>
-        <div className="newsletterButtonContainer">
-          <ThemedButton text="Subscribe Now"/>
+        <div className="newsletterButtonContainerHome">
+          <ThemedButton text="Subscribe Now" href="/newsletter"/>
         </div>
       </div>
     </div>

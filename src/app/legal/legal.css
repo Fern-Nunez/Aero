@@ -1,29 +1,29 @@
-.mainContainer{
+.mainContainerLegalLegal{
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
 }
-.mainSections{
+.mainSectionsLegal{
     max-width: 1920px;
     width: 100%;
     padding: 0 2rem;
     padding-top: clamp(3rem, 5vw, 7rem);
 }
-.lightText{
+.lightTextLegal{
     font-weight: 200;
 }
-.boldText{
+.boldTextLegal{
     font-weight: 500;
 }
-.sectionHeader{
+.sectionHeaderLegal{
     font-size: clamp(50px, 7vw, 90px);
     padding-top: 2rem;
 }
-.secondSection{
+.secondSectionLegal{
     padding-top: clamp(3rem, 5vw, 3rem);
     width: 100%;
 }
-.goBackButtonContainer{
+.goBackButtonContainerLegal{
     margin-top: 2rem;
 }

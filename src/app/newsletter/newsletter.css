@@ -1,43 +1,40 @@
-.mainContainer{
+.mainContainerNewsletter{
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
 }
-
-.mainSections{
+.mainSectionsNewsletter{
     max-width: 1920px;
     width: 100%;
     padding: 0 2rem;
     padding-top: clamp(3rem, 5vw, 7rem);
 }
-.section{
+.sectionNewsletter{
     padding-top: 10rem;
 }
-.lightText{
+.lightTextNewsletter{
     font-weight: 200;
 }
-.boldText{
+.boldTextNewsletter{
     font-weight: 500;
 }
-.sectionHeader{
+.sectionHeaderNewsletter{
     font-size: clamp(50px, 7vw, 90px);
     padding-top: 2rem;
 }
-
-
-.formContainer{
+.formContainerNewsletter{
     padding-bottom: 3rem;
 }
-.sublineText{
+.sublineTextNewsletter{
     font-weight: 300;
     font-size: clamp(22px, 5vw, 30px);
     padding-top: 2rem;
 }
-.buttonContainerHome{
+.buttonContainerHomeNewsletter{
     padding-top: 2rem;
 }
-.formInput{
+.formInputNewsletter{
     background-color: black;
     border: 1px solid rgba(255, 255, 255, 1);
     width: 100%;
@@ -48,26 +45,26 @@ input:not([type="checkbox"]) {
     border: 1px solid #ccc;
     transition: all 0.3s ease;
   }
-  
+ 
   input:not([type="checkbox"]):focus {
     border-color: white;
     outline: none;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   }
-  
+ 
   input:not([type="checkbox"]):focus,
   input:not([type="checkbox"]):not(:placeholder-shown) {
     padding-left: 1rem;
     font-size: 20px;
     font-weight: 300;
   }
-.formInputContainersNews{
+.formInputContainersNewsNewsletter{
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     gap: clamp(0rem , 1vw, 2rem);
     margin-top: 2rem;
 }
-.formInputLabel{
+.formInputLabelNewsletter{
     position: relative;
     top: 10px;
     left: 20px;
@@ -76,12 +73,12 @@ input:not([type="checkbox"]) {
     font-weight: 300;
     font-size: clamp(20px, 4vw, 25px);
 }
-.checkboxLabel{
+.checkboxLabelNewsletter{
     font-weight: 300;
     font-size: clamp(20px, 4vw, 25px);
     padding-left: 1rem;
 }
-.actualCheckbox {
+.actualCheckboxNewsletter {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -96,14 +93,14 @@ input:not([type="checkbox"]) {
     margin-right: 8px;
     box-sizing: border-box;
   }
-  
+ 
   /* Style for the checked state */
-  .actualCheckbox:checked {
+  .actualCheckboxNewsletter:checked {
     background-color: black;
   }
-  
+ 
   /* Add a checkmark when checked */
-  .actualCheckbox:checked:after {
+  .actualCheckboxNewsletter:checked:after {
     content: '';
     position: absolute;
     left: 6px;
@@ -114,15 +111,13 @@ input:not([type="checkbox"]) {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
-
-  .buttonContainer {
+  .buttonContainerNewsletter {
     position: relative;
     display: flex;
     align-items: center;
     margin: 20px 0;
 }
-
-.buttonBox {
+.buttonBoxNewsletter {
     border: 0.75px solid white;
     width: 20%;
     min-width: 70px;
@@ -131,8 +126,7 @@ input:not([type="checkbox"]) {
     display: flex;
     align-items: center;
 }
-
-.buttonContent {
+.buttonContentNewsletter {
     display: flex;
     align-items: center;
     background-color: black;
@@ -143,15 +137,13 @@ input:not([type="checkbox"]) {
     z-index: 2;
     padding: 4px 15px;
 }
-
-.buttonText {
+.buttonTextNewsletter {
     white-space: nowrap;
     color: white; /* Ensure text is visible on black background */
     font-weight: 300;
     font-size: 22px;
 }
-
-.buttonArrow {
+.buttonArrowNewsletter {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,9 +151,8 @@ input:not([type="checkbox"]) {
     width: 25px;
     margin-right: 12px; /* Space between arrow and text (previously on buttonText) */
 }
-
 @media (min-width: 1280px){
-    .mainSections{
+    .mainSectionsNewsletter{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 15rem;

@@ -1,26 +1,26 @@
-.mainContainer{
+.mainContainerShowcase{
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
 }
-.mainSections{
+.mainSectionsShowcase{
     max-width: 1920px;
     width: 100%;
     padding: 0 2rem;
     padding-top: clamp(3rem, 5vw, 7rem);
 }
-.firstSection{
+.firstSectionShowcase{
     /* No specific styling in the original CSS */
 }
-.lightText{
+.lightTextShowcase{
     font-weight: 200;
 }
-.sectionHeader{
+.sectionHeaderShowcase{
     font-size: clamp(50px, 7vw, 90px);
     padding-top: 2rem;
 }
-.secondSection{
+.secondSectionShowcase{
     padding-top: clamp(3rem, 5vw, 3rem);
     width: 100%;
     display: grid;
@@ -28,61 +28,61 @@
     gap: 2.5rem;
     padding-bottom: 5rem;
 }
-.showcaseImageContainer1,
-.showcaseImageContainer2,
-.showcaseImageContainer3,
-.showcaseImageContainer4,
-.showcaseImageContainer5,
-.showcaseImageContainer6,
-.showcaseImageContainer7,
-.showcaseImageContainer8,
-.showcaseImageContainer9 {
+.showcaseImageContainer1Showcase,
+.showcaseImageContainer2Showcase,
+.showcaseImageContainer3Showcase,
+.showcaseImageContainer4Showcase,
+.showcaseImageContainer5Showcase,
+.showcaseImageContainer6Showcase,
+.showcaseImageContainer7Showcase,
+.showcaseImageContainer8Showcase,
+.showcaseImageContainer9Showcase {
     position: relative;
     height: clamp(350px, 50vw ,450px);
 }
-.showcaseImage{
+.showcaseImageShowcase{
     position: relative;
     width: 100%;
     height: 100%;
 }
 @media (min-width: 1280px){
-    .secondSection{
+    .secondSectionShowcase{
        display: grid;
        grid-template-columns: repeat(4, 1fr);
        grid-template-rows: repeat(4, minmax(350px, auto));
        gap: 3rem;
     }
-    
-    .showcaseImageContainer1,
-    .showcaseImageContainer2,
-    .showcaseImageContainer3,
-    .showcaseImageContainer4,
-    .showcaseImageContainer5,
-    .showcaseImageContainer6,
-    .showcaseImageContainer7,
-    .showcaseImageContainer8,
-    .showcaseImageContainer9 {
+   
+    .showcaseImageContainer1Showcase,
+    .showcaseImageContainer2Showcase,
+    .showcaseImageContainer3Showcase,
+    .showcaseImageContainer4Showcase,
+    .showcaseImageContainer5Showcase,
+    .showcaseImageContainer6Showcase,
+    .showcaseImageContainer7Showcase,
+    .showcaseImageContainer8Showcase,
+    .showcaseImageContainer9Showcase {
         position: relative;
         width: 100%;
         height: 100%;
     }
-    .showcaseImageContainer1{
+    .showcaseImageContainer1Showcase{
         grid-row: 1 / 3;
         grid-column: 1 / 3;
     }
-    .showcaseImageContainer2{
+    .showcaseImageContainer2Showcase{
         grid-row: 1;
         grid-column: 3 / span 2;
     }
-    .showcaseImageContainer3{
+    .showcaseImageContainer3Showcase{
         grid-row: 3;
         grid-column: 1 / span 2;
     }
-    .showcaseImageContainer4{
+    .showcaseImageContainer4Showcase{
         grid-row: 2/ span 2;
         grid-column: 4;
     }
-    .showcaseImageContainer5{
+    .showcaseImageContainer5Showcase{
         grid-row: 3 / span 2;
         grid-column: 3;
     }

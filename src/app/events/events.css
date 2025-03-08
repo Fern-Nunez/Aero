@@ -1,114 +1,113 @@
-.mainContainer{
+.mainContainerEventsEvents{
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
 }
-.mainSections{
+.mainSectionsEvents{
     max-width: 1920px;
     width: 100%;
     padding: 0 2rem;
     padding-top: clamp(3rem, 5vw, 7rem);
 }
-.firstSection{
+.firstSectionEvents{
     /* No specific styling in the original CSS */
 }
-.lightText{
+.lightTextEvents{
     font-weight: 200;
 }
-.sectionHeader{
+.sectionHeaderEvents{
     font-size: clamp(50px, 7vw, 90px);
     padding-top: 2rem;
 }
-.secondSection{
+.secondSectionEvents{
     padding-top: clamp(3rem, 5vw, 3rem);
     padding-bottom: 4rem;
     width: 100%;
 }
-.modelImageContainer{
+.modelImageContainerEvents{
     height: 325px;
     position: relative;
 }
-.modelButtonContainer{
+.modelButtonContainerEvents{
     height: 100px;
 }
-.featuredVehicleImage{
+.featuredVehicleImageEvents{
     position: relative;
     height: 100%;
     width: 100%;
 }
-.featuredVehicleImageGClass{
+.featuredVehicleImageGClassEvents{
     position: relative;
     height: 100%;
     width: 100%;
     object-position:79% center;
 }
-.featuredVehicleImagePorsche{
+.featuredVehicleImagePorscheEvents{
     position: relative;
     height: 100%;
     width: 100%;
     object-position:35% center;
 }
-.featuredVehicleOverlay {
+.featuredVehicleOverlayEvents {
     position: absolute;
     background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0)20%,  rgba(0,0,0,0.3) 100%);
     z-index: 2;
     height: 100%;
     width: 100%;
 }
-.featuredVehicleOverlay1 {
+.featuredVehicleOverlay1Events {
     position: absolute;
     background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0)20%,  rgba(0,0,0,0) 100%);
     z-index: 2;
     height: 100%;
     width: 100%;
 }
-.featuredVehicleOverlay2 {
+.featuredVehicleOverlay2Events {
     position: absolute;
     background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0)20%,  rgba(0,0,0,0) 100%);
     z-index: 2;
     height: 100%;
     width: 100%;
 }
-.modelGridItem{
+.modelGridItemEvents{
     display: grid;
     grid-template-rows: auto auto auto 100px ;
     gap: 1rem;
-
 }
-.modelGridItemFuture{
+.modelGridItemFutureEvents{
     display: grid;
     grid-template-rows: repeat(3, auto);
     gap: 1rem;
 }
-.featuredModelsGrid{
+.featuredModelsGridEvents{
     display: grid;
     grid-template-rows: repeat(3, auto);
     gap: 4rem;
     padding-bottom: clamp(2rem, 5vw, 7rem);
 }
-.featuredModelsGridPage{
+.featuredModelsGridPageEvents{
     display: grid;
     grid-template-rows: repeat(3, auto);
     gap: 4rem;
     padding-bottom: clamp(2rem, 5vw, 3rem);
 }
-
 @media (min-width: 1280px) {
-    .featuredModelsGrid{
+    .featuredModelsGridEvents{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
     }
-    .featuredModelsGridPage{
+    .featuredModelsGridPageEvents{
         display: grid;
         grid-template-columns: repeat(3, auto);
         gap: 3rem;
     }
-    .modelGridItem{
+    .modelGridItemEvents{
         max-width: 585.85px;
+        max-width: 600px;
     }
-    .modelGridItemFuture{
+    .modelGridItemFutureEvents{
         max-width: 585.85px;
     }
 }

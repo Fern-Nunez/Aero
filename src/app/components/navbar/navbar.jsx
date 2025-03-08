@@ -104,42 +104,50 @@ export default function Navbar() {
               </div>
             </a>
             <div className="socials">
-              <div className="socialLink">
-                <Image
-                  src="/icons/facebook.png"
-                  alt="Facebook"
-                  width={25}
-                  height={25}
-                  className="socialImageLink"
-                />
-              </div>
-              <div className="socialLink">
-                <Image
-                  src="/icons/instagram.png"
-                  alt="Instagram"
-                  width={25}
-                  height={25}
-                  className="socialImageLink"
-                />
-              </div>
-              <div className="socialLink">
-                <Image
-                  src="/icons/tiktok.png"
-                  alt="TikTok"
-                  width={25}
-                  height={25}
-                  className="socialImageLink"
-                />
-              </div>
-              <div className="socialLink">
-                <Image
-                  src="/icons/x.png"
-                  alt="TikTok"
-                  width={20}
-                  height={20}
-                  className="socialImageLink"
-                />
-              </div>
+              <a href="https://www.facebook.com/home" target="_blank" rel="noopener noreferrer">
+                <div className="socialLink">
+                  <Image
+                    src="/icons/facebook.png"
+                    alt="Facebook"
+                    width={25}
+                    height={25}
+                    className="socialImageLink"
+                  />
+                </div>
+              </a>
+              <a href="https://www.instagram.com/home" target="_blank" rel="noopener noreferrer">
+                <div className="socialLink">
+                  <Image
+                    src="/icons/instagram.png"
+                    alt="Instagram"
+                    width={25}
+                    height={25}
+                    className="socialImageLink"
+                  />
+                </div>
+              </a>
+              <a href="https://www.tiktok.com/en/" target="_blank" rel="noopener noreferrer">
+                <div className="socialLink">
+                  <Image
+                    src="/icons/tiktok.png"
+                    alt="TikTok"
+                    width={25}
+                    height={25}
+                    className="socialImageLink"
+                  />
+                </div>
+              </a>
+              <a href="https://x.com/home" target="_blank" rel="noopener noreferrer">
+                <div className="socialLink">
+                  <Image
+                    src="/icons/x.png"
+                    alt="TikTok"
+                    width={20}
+                    height={20}
+                    className="socialImageLink"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         )}

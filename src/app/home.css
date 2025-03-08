@@ -1,73 +1,73 @@
-.mainContainer{
+.mainContainerHome{
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
 }
-.middleSetter{
+.middleSetterHome{
     padding: 0 2rem;
 }
 /*-----------------------------------------------------------------------------------------------*/
 
 
-.heroContainer {
+.heroContainerHome {
     width: 100%;
     overflow: hidden; /* Prevents any potential overflow */
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-.sectionHeader{
+.sectionHeaderHome{
     padding: clamp(2rem, 5vw, 6rem) 0;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-.modelImageContainer{
+.modelImageContainerHome{
     height: 325px;
     position: relative;
 }
-.featuredVehicleImage{
+.featuredVehicleImageHome{
     position: relative;
     height: 100%;
     width: 100%;
 }
-.featuredVehicleImageGClass{
+.featuredVehicleImageGClassHome{
     position: relative;
     height: 100%;
     width: 100%;
     object-position:79% center;
 }
-.featuredVehicleImagePorsche{
+.featuredVehicleImagePorscheHome{
     position: relative;
     height: 100%;
     width: 100%;
     object-position:35% center;
 }
-.featuredVehicleOverlay {
+.featuredVehicleOverlayHome {
     position: absolute;
     background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0)20%,  rgba(0,0,0,0.3) 100%);
     z-index: 2;
     height: 100%;
     width: 100%;
 }
-.featuredVehicleOverlay1 {
+.featuredVehicleOverlay1Home {
     position: absolute;
     background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0)20%,  rgba(0,0,0,0) 100%);
     z-index: 2;
     height: 100%;
     width: 100%;
 }
-.featuredVehicleOverlay2 {
+.featuredVehicleOverlay2Home {
     position: absolute;
     background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0)20%,  rgba(0,0,0,0) 100%);
     z-index: 2;
     height: 100%;
     width: 100%;
 }
-.modelGridItem{
+.modelGridItemHome{
     display: grid;
     grid-template-rows: repeat(4, auto);
     gap: 1rem;
 }
-.featuredModelsGrid{
+.featuredModelsGridHome{
     display: grid;
     grid-template-rows: repeat(3, auto);
     gap: 4rem;
@@ -75,7 +75,7 @@
 }
 
 @media (min-width: 1280px) {
-    .featuredModelsGrid{
+    .featuredModelsGridHome{
         display: grid;
         grid-template-columns: repeat(3, auto);
         gap: 3rem;
@@ -83,7 +83,7 @@
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-.eeSection{
+.eeSectionHome{
     margin-bottom: clamp(2rem, 5vw, 10rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -92,67 +92,67 @@
     margin: clamp(0rem, 20vw, 17rem) 0;
     padding-bottom: clamp(1rem, 5vw, 3rem);
 }
-.eeHeadlineContainer{
+.eeHeadlineContainerHome{
     grid-column: 1;
     grid-row: 1;
 
 }
-.description{
+.descriptionHome{
     font-size: clamp(22px, 5vw, 30px);
     font-weight: 300;
     grid-column: 1;
     grid-row: 2;
 }
-.eeButtonContainer{
+.eeButtonContainerHome{
     grid-column: 1;
     grid-row: 3;
 }
-.eeImageContainer{
+.eeImageContainerHome{
     height: 700px;
     position: relative;
     grid-column: 2;
     grid-row: 1/ span 3;
 }
 @media (max-width: 1280px) {
-    .eeSection {
+    .eeSectionHome {
         display: grid;
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr;
         row-gap: 2rem;
     }
     
-    .eeHeadlineContainer {
+    .eeHeadlineContainerHome {
         grid-row: 1;
         grid-column: 1;
         width: 100%;
     }
     
-    .eeImageContainer {
+    .eeImageContainerHome {
         grid-row: 2;
         grid-column: 1;
         height: 325px;
         width: 100%;
     }
     
-    .description {
+    .descriptionHome {
         grid-row: 3;
         grid-column: 1;
         font-size: 24px; /* You might want a smaller font on mobile */
     }
     
-    .eeButtonContainer {
+    .eeButtonContainerHome {
         grid-row: 4;
         grid-column: 1;
     }
 }
 
 /*-----------------------------------------------------------------------------------------------*/
-.eventsSection{
+.eventsSectionHome{
     background-color: white;
     padding: clamp(2rem, 10vw, 15rem) 0;
 }
 /*-----------------------------------------------------------------------------------------------*/
-.newsletterSection {
+.newsletterSectionHome {
     /* Keep your existing styles */
     background-image: url('/images/home/newsletterImageNew.png');
     background-size: cover;
@@ -167,7 +167,7 @@
     align-items: center;
 }
 
-.newsletterContent {
+.newsletterContentHome {
     color: white;
     z-index: 2;
     position: relative; /* Center the text */
@@ -176,7 +176,7 @@
     max-width: 600px;
 }
 
-.newsletterOverlay {
+.newsletterOverlayHome {
     position: absolute;
     top: 0;
     left: 0;
@@ -187,19 +187,19 @@
 }
 
 /* Add some spacing between elements */
-.newsletterHeader {
+.newsletterHeaderHome {
     font-size: clamp(27px, 4vw, 40px);
     font-weight: 600;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.newsletterDescription {
+.newsletterDescriptionHome {
     text-align: center;
     font-size: clamp(15px, 4vw, 25px);
     font-weight: 300;
 }
-.newsletterButtonContainer{
+.newsletterButtonContainerHome{
     display: flex;
     align-items: center;
     margin: 0 auto;
