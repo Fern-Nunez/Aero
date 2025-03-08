@@ -81,7 +81,7 @@ export default function Events() {
                             </div>
             
                             <div className="modelDescriptionContainerEvents">
-                            <p>Experience the Monaco Grand Prix as Charles Leclerc takes on Monte Carlo's legendary circuit with speed and precision.</p>
+                            <p>Experience the Monaco Grand Prix as Charles Leclerc takes on Monte Carlo&apos;s legendary circuit with speed and precision.</p>
                             </div>
                             <div className="modelButtonContainerEvents">
                             <ThemedButton text="Join the List" href="/invitation"/>
@@ -111,7 +111,7 @@ export default function Events() {
                             </div>
             
                             <div className="modelNameContianerEvents">
-                            <h2>Concours d'Elegance Villa d'Este</h2>
+                            <h2>Concours d&apos;Elegance Villa d&apos;Este</h2>
                             </div>
             
                             <div className="modelDescriptionContainerEvents">
@@ -159,7 +159,7 @@ export default function Events() {
                             </div>
             
                             <div className="modelDescriptionContainerEvents">
-                            <p>Experience the world's most legendary endurance race, where speed, strategy, and resilience define champions.</p>
+                            <p>Experience the world&apos;s most legendary endurance race, where speed, strategy, and resilience define champions.</p>
                             </div>
                         </div>
         

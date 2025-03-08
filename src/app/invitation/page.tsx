@@ -10,7 +10,7 @@ export default function Invitation() {
                     <span className="lightTextInvitation">in Automotive History</span>
                 </div>
                 <div className="sublineTextInvitation">
-                    Owning an Aero is more than a purchase—it's an exclusive experience. Request an invitation to secure your place among those who demand the ultimate in performance, luxury, and craftsmanship.
+                    Owning an Aero is more than a purchase—it&apos;s an exclusive experience. Request an invitation to secure your place among those who demand the ultimate in performance, luxury, and craftsmanship.
                 </div>
             </div>
             <div className="secondSectionInvitation">
