@@ -36,8 +36,8 @@ export default function Newsletter() {
                         </div>
 
                         <div className="termsCheckBoxContainer">
-                            <input type="checkbox" id="terms" required className="actualCheckbox"></input>
-                            <label htmlFor="terms" className="checkboxLabel"> Be the first to experience private showcases, test drives, and exclusive launch events.</label>
+                            <input type="checkbox" id="first" className="actualCheckbox"></input>
+                            <label htmlFor="first" className="checkboxLabel"> Be the first to experience private showcases, test drives, and exclusive launch events.</label>
                         </div>
 
                         <div className="termsCheckBoxContainer">

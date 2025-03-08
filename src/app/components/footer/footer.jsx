@@ -117,17 +117,17 @@ export default function Footer() {
         </div>
       </div>
       <div className="desktopFooterMenuLinks">
-          <a>
+          <a href="/vehicles">
             <div className="footerLink">
                 G Class
             </div>
           </a>
-          <a>
+          <a href="/vehicles">
             <div className="footerLink">
                 911 Carrera GTS
             </div>
           </a>
-          <a>
+          <a href="/vehicles">
             <div className="footerLink">
                 C Class
             </div>
@@ -161,37 +161,37 @@ export default function Footer() {
         </div>
       </div>
       <div className="desktopFooterMenuLinks">
-          <a>
+          <a href="/">
             <div className="footerLink">
                 Home
             </div>
           </a>
-          <a>
+          <a href="/vehicles">
             <div className="footerLink">
                 Vehicles
             </div>
           </a>
-          <a>
+          <a href="/events">
             <div className="footerLink">
                 Events
             </div>
           </a>
-          <a>
+          <a href="/engineering-excellence">
             <div className="footerLink">
                 Engineering Excellence
             </div>
           </a>
-          <a>
+          <a href="/showcase">
             <div className="footerLink">
                 Visual Showcase
             </div>
           </a>
-          <a>
+          <a href="/newsletter">
             <div className="footerLink">
                 Newsletter
             </div>
           </a>
-          <a>
+          <a href="/invitation">
             <div className="footerLink">
                 Request and Invitation
             </div>
@@ -226,32 +226,32 @@ export default function Footer() {
         </div>
       </div>
       <div className="desktopFooterMenuLinks">
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Contact Us
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 FAQ
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Dealership Locator
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Test Drive Request
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Maintenance & Service
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Owners Portal
             </div>
@@ -280,32 +280,32 @@ export default function Footer() {
         </div>
       </div>
       <div className="desktopFooterMenuLinks">
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Privacy Policy
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Terms & Conditions
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Cookie Policy
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Return & Refund Policy
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Warranty & Service Policy
             </div>
           </a>
-          <a>
+          <a href="/legal">
             <div className="footerLink">
                 Accessibility Statement
             </div>

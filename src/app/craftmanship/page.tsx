@@ -10,8 +10,7 @@ export default function Craftmanship() {
 
             <div className="firstSection">
             <div className="sectionHeader">
-                <span className="lightText">Excellence in </span>
-                <span className="boldText">Every Stitch and Surface </span>
+                <span className="lightText">The Pinnacle of Engineering & Innovation </span>
             </div>
 
             <div className="imageContainer">
