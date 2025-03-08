@@ -1,6 +1,8 @@
 "use client"
 import "./navbar.css";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
@@ -103,19 +105,40 @@ export default function Navbar() {
             </a>
             <div className="socials">
               <div className="socialLink">
-                I
+                <Image
+                  src="/icons/facebook.png"
+                  alt="Facebook"
+                  width={25}
+                  height={25}
+                  className="socialImageLink"
+                />
               </div>
               <div className="socialLink">
-                I
+                <Image
+                  src="/icons/instagram.png"
+                  alt="Instagram"
+                  width={25}
+                  height={25}
+                  className="socialImageLink"
+                />
               </div>
               <div className="socialLink">
-                I
+                <Image
+                  src="/icons/tiktok.png"
+                  alt="TikTok"
+                  width={25}
+                  height={25}
+                  className="socialImageLink"
+                />
               </div>
               <div className="socialLink">
-                I
-              </div>
-              <div className="socialLink">
-                I
+                <Image
+                  src="/icons/x.png"
+                  alt="TikTok"
+                  width={20}
+                  height={20}
+                  className="socialImageLink"
+                />
               </div>
             </div>
           </div>
