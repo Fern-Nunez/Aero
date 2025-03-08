@@ -11,21 +11,21 @@ function EventsSec() {
             title: "Monterey Car Week March 2025",
             description: "Experience the future of automotive excellence with exclusive reveals, high-performance builds, and iconic craftsmanship.",
             image: "/images/home/carWeek.JPG",
-            link: "/events/monterey-car-week-2025"
+            link: "/events"
         },
         {
             id: 2,
             title: "Geneva International Motor Show",
             description: "Explore groundbreaking concept cars, cutting-edge tech, and stunning new models as top manufacturers redefine the future of driving.",
             image: "/images/home/motorShow.jpg",
-            link: "/events/geneva-motor-show"
+            link: "/events"
         },
         {
             id: 3,
             title: "Formula 1 Monaco Grand Prix",
             description: "Experience the Monaco Grand Prix as Charles Leclerc takes on Monte Carlo’s legendary circuit with speed and precision.",
             image: "/images/home/f1monaco.webp",
-            link: "/events/monaco-grand-prix"
+            link: "/events"
         }
     ]);
     
@@ -200,7 +200,7 @@ function EventsSec() {
                                             style={{ display: 'block' }}
                                         />
                                     </span>
-                                    <span className="blackButtonText">View Event</span>
+                                    <span className="blackButtonText">View Events</span>
                                 </div>
                             </div>
                         </div>

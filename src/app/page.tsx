@@ -40,7 +40,7 @@ export default function Home() {
                 <p>A rugged off-road icon with aggressive styling and unmatched performance on any terrain.</p>
               </div>
               <div className="modelButtonContainer">
-                <ThemedButton text="View Vehicle"/>
+                <ThemedButton text="View Vehicles"/>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ export default function Home() {
                 <p>A track-tuned powerhouse, blending speed, precision, and aerodynamics for ultimate performance.</p>
               </div>
               <div className="modelButtonContainer">
-                <ThemedButton text="View Vehicle"/>
+                <ThemedButton text="View Vehicles"/>
               </div>
             </div>
 
@@ -90,7 +90,7 @@ export default function Home() {
                 <p>A luxury sedan redefined, featuring sleek styling, enhanced aerodynamics, and a bold presence.</p>
               </div>
               <div className="modelButtonContainer">
-                <ThemedButton text="View Vehicle"/>
+                <ThemedButton text="View Vehicles"/>
               </div>
             </div>
 

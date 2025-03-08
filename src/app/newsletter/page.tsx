@@ -19,7 +19,7 @@ export default function Newsletter() {
             </div>
             <div className="secondSection">
                 <form className="formContainer">
-                    <div className="formInputContainers">
+                    <div className="formInputContainersNews">
                         <div>
                             <label className="formInputLabel"> Full Name</label>
                             <input type="input" className="formInput" required></input>                        
@@ -42,7 +42,7 @@ export default function Newsletter() {
 
                         <div className="termsCheckBoxContainer">
                             <input type="checkbox" id="terms" required className="actualCheckbox"></input>
-                            <label htmlFor="terms" className="checkboxLabel">  I agree to the [Privacy Policy] and consent to the collection and use of my information for communications related to brand updates, promotions, and events.</label>
+                            <label htmlFor="terms" className="checkboxLabel">  I agree to the [Privacy Policy] and consent to the use of my information for brand updates and exclusive offers.</label>
                         </div>
                     </div>
 

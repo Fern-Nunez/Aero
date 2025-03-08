@@ -1,15 +1,15 @@
 import Image from "next/image";
 import ThemedButton from "../components/button/themedButton";
-import "./vehicles.css";
+import "./events.css";
 
-export default function Invitation() {
+export default function Events() {
   return (
     <div className="mainContainer">
         <div className="mainSections">
 
             <div className="firstSection">
                 <div className="sectionHeader">
-                    <span className="lightText">Featured Models</span>
+                    <span className="lightText">Featured Events</span>
                 </div>
             </div>
                 <div className="secondSection">
@@ -17,7 +17,7 @@ export default function Invitation() {
                         <div className="modelGridItem">
                             <div className="modelImageContainer">
                             <Image
-                                src="/images/home/gClass.webp"
+                                src="/images/home/carWeek.JPG"
                                 alt="G Class Image"
                                 layout="fill"
                                 objectFit="cover"
@@ -27,11 +27,11 @@ export default function Invitation() {
                             </div>
             
                             <div className="modelNameContianer">
-                            <h2>G Class</h2>
+                            <h2>Monterey Car Week March 2025</h2>
                             </div>
             
                             <div className="modelDescriptionContainer">
-                            <p>A rugged off-road icon with aggressive styling and unmatched performance on any terrain.</p>
+                            <p>Experience the future of automotive excellence with exclusive reveals, high-performance builds, and iconic craftsmanship.</p>
                             </div>
                             <div className="modelButtonContainer">
                             <ThemedButton text="Join the List"/>
@@ -42,7 +42,7 @@ export default function Invitation() {
                         <div className="modelGridItem">
                             <div className="modelImageContainer">
                             <Image
-                                src="/images/home/porsche.jpg"
+                                src="/images/home/motorShow.jpg"
                                 alt="Porsche Image"
                                 layout="fill"
                                 objectFit="cover"
@@ -52,11 +52,11 @@ export default function Invitation() {
                             </div>
             
                             <div className="modelNameContianer">
-                            <h2>911 Carrera GTS</h2>
+                            <h2>Geneva Motor Show</h2>
                             </div>
             
                             <div className="modelDescriptionContainer">
-                            <p>A track-tuned powerhouse, blending speed, precision, and aerodynamics for ultimate performance.</p>
+                            <p>Explore groundbreaking concept cars, cutting-edge tech, and stunning new models as top manufacturers redefine the future of driving.</p>
                             </div>
                             <div className="modelButtonContainer">
                             <ThemedButton text="Join the List"/>
@@ -67,7 +67,7 @@ export default function Invitation() {
                         <div className="modelGridItem">
                             <div className="modelImageContainer">
                             <Image
-                                src="/images/home/cClass.jpg"
+                                src="/images/home/f1monaco.webp"
                                 alt="C Class Image"
                                 layout="fill"
                                 objectFit="cover"
@@ -77,11 +77,11 @@ export default function Invitation() {
                             </div>
             
                             <div className="modelNameContianer">
-                            <h2>C Class</h2>
+                            <h2>Formula 1 Monaco Grand Prix</h2>
                             </div>
             
                             <div className="modelDescriptionContainer">
-                            <p>A luxury sedan redefined, featuring sleek styling, enhanced aerodynamics, and a bold presence.</p>
+                            <p>Experience the Monaco Grand Prix as Charles Leclerc takes on Monte Carlo’s legendary circuit with speed and precision.</p>
                             </div>
                             <div className="modelButtonContainer">
                             <ThemedButton text="Join the List"/>
@@ -93,7 +93,7 @@ export default function Invitation() {
 
                 <div className="firstSection">
                 <div className="sectionHeader">
-                    <span className="lightText">Upcoming Models</span>
+                    <span className="lightText">Upcoming Events</span>
                 </div>
             </div>
                 <div className="secondSection">
@@ -101,7 +101,7 @@ export default function Invitation() {
                         <div className="modelGridItemFuture">
                             <div className="modelImageContainer">
                             <Image
-                                src="/images/vehicles/rollsRoyce.jpg"
+                                src="/images/events/villa.webp"
                                 alt="G Class Image"
                                 layout="fill"
                                 objectFit="cover"
@@ -111,11 +111,11 @@ export default function Invitation() {
                             </div>
             
                             <div className="modelNameContianer">
-                            <h2>Rolls Royce Ghost</h2>
+                            <h2>Concours d’Elegance Villa d’Este</h2>
                             </div>
             
                             <div className="modelDescriptionContainer">
-                            <p>A rugged off-road icon with aggressive styling and unmatched performance on any terrain.</p>
+                            <p>A prestigious gathering of rare and exquisite classic cars set against the stunning backdrop of Lake Como.</p>
                             </div>
                         </div>
             
@@ -123,7 +123,7 @@ export default function Invitation() {
                         <div className="modelGridItemFuture">
                             <div className="modelImageContainer">
                             <Image
-                                src="/images/vehicles/taycanPink.jpg"
+                                src="/images/events/sema.jpg"
                                 alt="Porsche Image"
                                 layout="fill"
                                 objectFit="cover"
@@ -133,11 +133,11 @@ export default function Invitation() {
                             </div>
             
                             <div className="modelNameContianer">
-                            <h2>Porsche Taycan</h2>
+                            <h2>SEMA Show </h2>
                             </div>
             
                             <div className="modelDescriptionContainer">
-                            <p>A track-tuned powerhouse, blending speed, precision, and aerodynamics for ultimate performance.</p>
+                            <p>The ultimate showcase of cutting-edge automotive customization, performance, and aftermarket innovation.</p>
                             </div>
                         </div>
             
@@ -145,7 +145,7 @@ export default function Invitation() {
                         <div className="modelGridItemFuture">
                             <div className="modelImageContainer">
                             <Image
-                                src="/images/vehicles/G63.avif"
+                                src="/images/events/leMans.avif"
                                 alt="C Class Image"
                                 layout="fill"
                                 objectFit="cover"
@@ -155,11 +155,11 @@ export default function Invitation() {
                             </div>
             
                             <div className="modelNameContianer">
-                            <h2>AMG G63 Cabriolet</h2>
+                            <h2>Le Mans 24 Hours</h2>
                             </div>
             
                             <div className="modelDescriptionContainer">
-                            <p>A luxury sedan redefined, featuring sleek styling, enhanced aerodynamics, and a bold presence.</p>
+                            <p>Experience the world’s most legendary endurance race, where speed, strategy, and resilience define champions.</p>
                             </div>
                         </div>
         

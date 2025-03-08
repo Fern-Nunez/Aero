@@ -29,6 +29,9 @@
     height: 325px;
     position: relative;
 }
+.modelButtonContainer{
+    height: 100px;
+}
 .featuredVehicleImage{
     position: relative;
     height: 100%;
@@ -71,6 +74,7 @@
     display: grid;
     grid-template-rows: auto auto auto 100px ;
     gap: 1rem;
+
 }
 .modelGridItemFuture{
     display: grid;
@@ -93,12 +97,18 @@
 @media (min-width: 1280px) {
     .featuredModelsGrid{
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
     }
     .featuredModelsGridPage{
         display: grid;
         grid-template-columns: repeat(3, auto);
         gap: 3rem;
+    }
+    .modelGridItem{
+        max-width: 585.85px;
+    }
+    .modelGridItemFuture{
+        max-width: 585.85px;
     }
 }
