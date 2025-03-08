@@ -138,13 +138,13 @@ export default function Footer() {
       {(isVehicleMenuOpen || isVehicleMenuClosing) && (
         <div className={`footerMenuLinksContainter ${isVehicleMenuClosing ? 'closing' : ''}`}>
           <a href="/vehicles">
-            <div className="footerLink">Stratos</div>
+            <div className="footerLink">G class</div>
           </a>
           <a href="/vehicles">
-            <div className="footerLink">Tempest</div>
+            <div className="footerLink">911 Carrera GTS</div>
           </a>
           <a href="/vehicles">
-            <div className="footerLink">Zenith</div>
+            <div className="footerLink">C Class</div>
           </a>
           
           
@@ -204,13 +204,22 @@ export default function Footer() {
           <a href="/">
             <div className="footerLink">Home</div>
           </a>
-          <a href="/craftmanship">
-            <div className="footerLink">Craftmanship</div>
+          <a href="/vehicles">
+            <div className="footerLink">Vehicles</div>
           </a>
-          <a href="/legacy">
-            <div className="footerLink">Our Legacy</div>
+          <a href="/events">
+            <div className="footerLink">Events</div>
           </a>
-          <a href="invitation">
+          <a href="/engineering-excellence">
+            <div className="footerLink">Engineering Excellence</div>
+          </a>
+          <a href="/showcase">
+            <div className="footerLink">Visual Showcase</div>
+          </a>
+          <a href="/newsletter">
+            <div className="footerLink">Newsletter</div>
+          </a>
+          <a href="/invitation">
             <div className="footerLink">Request an Invitation</div>        
           </a>
         </div>
@@ -261,12 +270,25 @@ export default function Footer() {
       
       {(isSupportMenuOpen || isSupportMenuClosing) && (
         <div className={`footerMenuLinksContainter ${isSupportMenuClosing ? 'closing' : ''}`}>
-          <div className="footerLink">Contact Us</div>
-          <div className="footerLink">FAQ</div>
-          <div className="footerLink">Dealership Locator</div>
-          <div className="footerLink">Test Drive Request</div>
-          <div className="footerLink">Maintenance & Service</div>
-          <div className="footerLink">Owner's Portal</div>
+          <a href="/legal">
+            <div className="footerLink">Contact Us</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">FAQ</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Dealership Locator</div>
+          </a>
+          <a href="/legal">
+           <div className="footerLink">Test Drive Request</div> 
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Maintenance & Service</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Owner's Portal</div>
+          </a>
+          
         </div>
       )}
 
@@ -315,12 +337,24 @@ export default function Footer() {
 
       {(isLegalMenuOpen || isLegalMenuClosing) && (
         <div className={`footerMenuLinksContainter ${isLegalMenuClosing ? 'closing' : ''}`}>
-          <div className="footerLink">Privacy Policy</div>
-          <div className="footerLink">Terms & Conditions</div>
-          <div className="footerLink">Cookie Policy</div>
-          <div className="footerLink">Return & Refund Policy</div>
-          <div className="footerLink">Warranty & Service Policy</div>
-          <div className="footerLink">Accessibilty Statement</div>
+          <a href="/legal">
+            <div className="footerLink">Privacy Policy</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Terms & Conditions</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Cookie Policy</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Return & Refund Policy</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Warranty & Service Policy</div>
+          </a>
+          <a href="/legal">
+            <div className="footerLink">Accessibilty Statement</div>
+          </a>
         </div>
       )}
       
