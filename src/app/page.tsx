@@ -108,7 +108,7 @@ export default function Home() {
           </div>
             
           <div className="eeButtonContainerHome">
-            <ThemedButton text="Discover More"/>
+            <ThemedButton text="Discover More" href="/engineering-excellence"/>
           </div>
 
           <div className="eeImageContainerHome">

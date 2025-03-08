@@ -7,7 +7,7 @@ export default function Legal() {
         <div className="firstSectionLegal">
           <div className="sectionHeaderLegal">
             <span className="lightTextLegal">Important Notice: </span>
-            <span className="voldTextLegal">Mock Website Information</span>
+            <span className="boldTextLegal">Mock Website Information</span>
           </div>
         </div>
         <div className="secondSectionLegal">
