@@ -13,8 +13,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Aero",
-  description: "Discover the wonders of nature at Eden Wildlife Preserve.",
+  description: "Redefining performance and luxury with cutting-edge automotive excellence.",
 };
+
 
 export default function RootLayout({
   children,

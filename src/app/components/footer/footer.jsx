@@ -359,8 +359,13 @@ export default function Footer() {
       )}
       
       <div className="footerRights">
-        Designed by **Name** Studio. All rights reserved.
-      </div>
+      Designed by{" "}
+      <a href="https://www.monoscale.co" className="text-blue-500 hover:underline">
+        Monoscale Studio
+      </a>
+      . All rights reserved.
+    </div>
+
     </div>
     </>
   );
